@@ -26,14 +26,14 @@
 	<Form.Field {form} name="password">
 		<Form.Control let:attrs>
 			<Form.Label>Contraseña</Form.Label>
-			<Input {...attrs} bind:value={$formData.password} />
+			<Input {...attrs} bind:value={$formData.password} type="password" />
 		</Form.Control>
 		<Form.FieldErrors />
 	</Form.Field>
 	<Form.Field {form} name="passwordConfirmation">
 		<Form.Control let:attrs>
 			<Form.Label>Confirmar contraseña</Form.Label>
-			<Input {...attrs} bind:value={$formData.passwordConfirmation} />
+			<Input {...attrs} bind:value={$formData.passwordConfirmation} type="password" />
 		</Form.Control>
 		<Form.FieldErrors />
 	</Form.Field>

@@ -11,16 +11,15 @@ export const usersTable = sqliteTable("users", {
   id: text("id")
     .primaryKey()
     .$defaultFn(() => generateId(15)),
-  passwordHash: text("passwordHash").notNull(),
-  username: text("username").notNull(),
+  password_hash: text("password_hash").notNull(),
+  email: text("email", {
+    length: 255,
+  }).notNull().unique(),
   // other user attributes
   name: text("name", {
     length: 255,
   }),
   lastName: text("last_name", {
-    length: 255,
-  }),
-  email: text("email", {
     length: 255,
   }),
 });

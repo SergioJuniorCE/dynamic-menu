@@ -50,11 +50,15 @@
   "dependencies": {
     "@libsql/client": "^0.6.0",
     "@lucia-auth/adapter-drizzle": "^1.0.7",
+    "bits-ui": "^0.21.3",
     "clsx": "^2.1.0",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.8",
+    "formsnap": "^1.0.0",
     "oslo": "^1.2.0",
+    "sveltekit-superforms": "^2.12.4",
     "tailwind-merge": "^2.2.2",
-    "tailwind-variants": "^0.2.1"
+    "tailwind-variants": "^0.2.1",
+    "zod": "^3.22.4"
   }
 }

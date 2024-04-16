@@ -10,5 +10,7 @@
 <div class="flex w-full flex-wrap gap-3">
 	{#each data.restaurants as restaurant}
 		<RestaurantCard {restaurant} />
+	{:else}
+		
 	{/each}
 </div>

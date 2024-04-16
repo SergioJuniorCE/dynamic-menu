@@ -8,7 +8,7 @@
 	export let className: string = '';
 </script>
 
-<a href="">
+<a href="/restaurants/{restaurant.id}">
 	<Card.Root class={cn(className)}>
 		<Card.Header>
 			<Card.Title>{restaurant.name}</Card.Title>
